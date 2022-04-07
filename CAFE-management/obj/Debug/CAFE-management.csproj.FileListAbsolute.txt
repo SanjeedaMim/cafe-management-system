@@ -1,0 +1,15 @@
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\bin\Debug\CAFE-management.exe.config
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\bin\Debug\CAFE-management.exe
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\bin\Debug\CAFE-management.pdb
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\bin\Debug\Guna.UI2.dll
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\obj\Debug\CAFE-management.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\obj\Debug\CAFE-management.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\obj\Debug\CAFE_management.Form1.resources
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\obj\Debug\CAFE_management.Properties.Resources.resources
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\obj\Debug\CAFE-management.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\obj\Debug\CAFE-management.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\obj\Debug\CAFE-management.csproj.CopyComplete
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\obj\Debug\CAFE-management.exe
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\obj\Debug\CAFE-management.pdb
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\obj\Debug\CAFE_management.Dashboard.resources
+C:\Users\ASUS\Desktop\C#\CAFE-management\CAFE-management\obj\Debug\CAFE_management.AllUserControls.UC_Welcome.resources
