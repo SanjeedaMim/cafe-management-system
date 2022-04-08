@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.sideBar = new Guna.UI2.WinForms.Guna2Panel();
             this.btnLogOut = new System.Windows.Forms.LinkLabel();
             this.btnExit = new Guna.UI2.WinForms.Guna2GradientCircleButton();
@@ -37,13 +39,16 @@
             this.btnAddItems = new Guna.UI2.WinForms.Guna2Button();
             this.btnPlaceOrder = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.uC_AddItems1 = new CAFE_management.AllUserControls.UC_AddItems();
+            this.uC_Welcome1 = new CAFE_management.AllUserControls.UC_Welcome();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_Welcome1 = new CAFE_management.AllUserControls.UC_Welcome();
-            this.uC_AddItems1 = new CAFE_management.AllUserControls.UC_AddItems();
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_PlaceOrder1 = new CAFE_management.AllUserControls.UC_PlaceOrder();
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.sideBar.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -171,10 +176,12 @@
             this.btnPlaceOrder.Size = new System.Drawing.Size(210, 48);
             this.btnPlaceOrder.TabIndex = 0;
             this.btnPlaceOrder.Text = "Place Order";
+            this.btnPlaceOrder.Click += new System.EventHandler(this.btnPlaceOrder_Click);
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
+            this.guna2Panel2.Controls.Add(this.uC_PlaceOrder1);
             this.guna2Panel2.Controls.Add(this.uC_AddItems1);
             this.guna2Panel2.Controls.Add(this.uC_Welcome1);
             this.guna2Panel2.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -183,6 +190,22 @@
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(727, 553);
             this.guna2Panel2.TabIndex = 1;
+            // 
+            // uC_AddItems1
+            // 
+            this.uC_AddItems1.BackColor = System.Drawing.Color.White;
+            this.uC_AddItems1.Location = new System.Drawing.Point(0, 3);
+            this.uC_AddItems1.Name = "uC_AddItems1";
+            this.uC_AddItems1.Size = new System.Drawing.Size(727, 553);
+            this.uC_AddItems1.TabIndex = 1;
+            // 
+            // uC_Welcome1
+            // 
+            this.uC_Welcome1.BackColor = System.Drawing.Color.White;
+            this.uC_Welcome1.Location = new System.Drawing.Point(3, 0);
+            this.uC_Welcome1.Name = "uC_Welcome1";
+            this.uC_Welcome1.Size = new System.Drawing.Size(727, 553);
+            this.uC_Welcome1.TabIndex = 0;
             // 
             // guna2Elipse1
             // 
@@ -208,21 +231,39 @@
             this.guna2Elipse4.BorderRadius = 30;
             this.guna2Elipse4.TargetControl = this.guna2Panel2;
             // 
-            // uC_Welcome1
+            // guna2Elipse5
             // 
-            this.uC_Welcome1.BackColor = System.Drawing.Color.White;
-            this.uC_Welcome1.Location = new System.Drawing.Point(3, 0);
-            this.uC_Welcome1.Name = "uC_Welcome1";
-            this.uC_Welcome1.Size = new System.Drawing.Size(727, 553);
-            this.uC_Welcome1.TabIndex = 0;
+            this.guna2Elipse5.BorderRadius = 30;
+            this.guna2Elipse5.TargetControl = this.guna2Panel2;
             // 
-            // uC_AddItems1
+            // uC_PlaceOrder1
             // 
-            this.uC_AddItems1.BackColor = System.Drawing.Color.White;
-            this.uC_AddItems1.Location = new System.Drawing.Point(0, 3);
-            this.uC_AddItems1.Name = "uC_AddItems1";
-            this.uC_AddItems1.Size = new System.Drawing.Size(727, 553);
-            this.uC_AddItems1.TabIndex = 1;
+            this.uC_PlaceOrder1.BackColor = System.Drawing.Color.White;
+            this.uC_PlaceOrder1.Location = new System.Drawing.Point(3, 1);
+            this.uC_PlaceOrder1.Name = "uC_PlaceOrder1";
+            this.uC_PlaceOrder1.Size = new System.Drawing.Size(727, 553);
+            this.uC_PlaceOrder1.TabIndex = 2;
+            // 
+            // guna2Transition1
+            // 
+            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             // 
             // Dashboard
             // 
@@ -261,5 +302,8 @@
         private AllUserControls.UC_Welcome uC_Welcome1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private AllUserControls.UC_AddItems uC_AddItems1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private AllUserControls.UC_PlaceOrder uC_PlaceOrder1;
+        private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
     }
 }
