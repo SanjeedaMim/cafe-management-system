@@ -41,7 +41,9 @@
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uC_Welcome1 = new CAFE_management.AllUserControls.UC_Welcome();
+            this.uC_AddItems1 = new CAFE_management.AllUserControls.UC_AddItems();
             this.sideBar.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -143,12 +145,13 @@
             this.btnAddItems.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddItems.ForeColor = System.Drawing.Color.Black;
             this.btnAddItems.HoverState.Parent = this.btnAddItems;
-            this.btnAddItems.Location = new System.Drawing.Point(30, 129);
+            this.btnAddItems.Location = new System.Drawing.Point(29, 129);
             this.btnAddItems.Name = "btnAddItems";
             this.btnAddItems.ShadowDecoration.Parent = this.btnAddItems;
             this.btnAddItems.Size = new System.Drawing.Size(210, 48);
             this.btnAddItems.TabIndex = 1;
             this.btnAddItems.Text = "Add Items";
+            this.btnAddItems.Click += new System.EventHandler(this.btnAddItems_Click);
             // 
             // btnPlaceOrder
             // 
@@ -172,6 +175,7 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
+            this.guna2Panel2.Controls.Add(this.uC_AddItems1);
             this.guna2Panel2.Controls.Add(this.uC_Welcome1);
             this.guna2Panel2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.guna2Panel2.Location = new System.Drawing.Point(241, 16);
@@ -199,6 +203,11 @@
             this.guna2Elipse3.BorderRadius = 30;
             this.guna2Elipse3.TargetControl = this.guna2Panel2;
             // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 30;
+            this.guna2Elipse4.TargetControl = this.guna2Panel2;
+            // 
             // uC_Welcome1
             // 
             this.uC_Welcome1.BackColor = System.Drawing.Color.White;
@@ -206,6 +215,14 @@
             this.uC_Welcome1.Name = "uC_Welcome1";
             this.uC_Welcome1.Size = new System.Drawing.Size(727, 553);
             this.uC_Welcome1.TabIndex = 0;
+            // 
+            // uC_AddItems1
+            // 
+            this.uC_AddItems1.BackColor = System.Drawing.Color.White;
+            this.uC_AddItems1.Location = new System.Drawing.Point(0, 3);
+            this.uC_AddItems1.Name = "uC_AddItems1";
+            this.uC_AddItems1.Size = new System.Drawing.Size(727, 553);
+            this.uC_AddItems1.TabIndex = 1;
             // 
             // Dashboard
             // 
@@ -219,6 +236,7 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.sideBar.ResumeLayout(false);
             this.sideBar.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
@@ -241,5 +259,7 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private AllUserControls.UC_Welcome uC_Welcome1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private AllUserControls.UC_AddItems uC_AddItems1;
     }
 }

@@ -44,5 +44,16 @@ namespace CAFE_management
             this.Hide();
             fm.Show();
         }
+
+        private void btnAddItems_Click(object sender, EventArgs e)
+        {
+            uC_AddItems1.Visible = true;
+            uC_AddItems1.BringToFront();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            uC_AddItems1.Visible=false;
+        }
     }
 }
