@@ -60,7 +60,6 @@ namespace CAFE_management
         private void btnPlaceOrder_Click(object sender, EventArgs e)
         {
             uC_Welcome1.SendToBack();
-            guna2Transition1.ShowSync(uC_PlaceOrder1);
             uC_PlaceOrder1.Visible = true;
             uC_PlaceOrder1.BringToFront();
         }
