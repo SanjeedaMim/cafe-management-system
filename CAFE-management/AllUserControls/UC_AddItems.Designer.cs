@@ -85,7 +85,7 @@
             // btnAddItem
             // 
             this.btnAddItem.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddItem.BorderRadius = 21;
+            this.btnAddItem.BorderRadius = 16;
             this.btnAddItem.CheckedState.Parent = this.btnAddItem;
             this.btnAddItem.CustomImages.Parent = this.btnAddItem;
             this.btnAddItem.FillColor = System.Drawing.Color.YellowGreen;
