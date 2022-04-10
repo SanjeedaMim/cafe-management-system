@@ -277,7 +277,7 @@
             // 
             // btnAddToCart
             // 
-            this.btnAddToCart.BorderRadius = 21;
+            this.btnAddToCart.BorderRadius = 16;
             this.btnAddToCart.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.btnAddToCart.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnAddToCart.CheckedState.ForeColor = System.Drawing.Color.YellowGreen;
@@ -334,6 +334,7 @@
             this.txtSearch.Size = new System.Drawing.Size(184, 24);
             this.txtSearch.TabIndex = 22;
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // guna2DataGridView1
             // 
@@ -425,7 +426,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.BorderRadius = 21;
+            this.btnRemove.BorderRadius = 16;
             this.btnRemove.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.btnRemove.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnRemove.CheckedState.ForeColor = System.Drawing.Color.YellowGreen;
@@ -444,7 +445,7 @@
             // 
             // btnPrint
             // 
-            this.btnPrint.BorderRadius = 21;
+            this.btnPrint.BorderRadius = 16;
             this.btnPrint.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.btnPrint.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnPrint.CheckedState.ForeColor = System.Drawing.Color.YellowGreen;
@@ -484,11 +485,12 @@
             // 
             // listBox1
             // 
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
+            this.listBox1.ItemHeight = 20;
             this.listBox1.Location = new System.Drawing.Point(40, 223);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(141, 292);
+            this.listBox1.Size = new System.Drawing.Size(141, 284);
             this.listBox1.TabIndex = 40;
             // 
             // UC_PlaceOrder
