@@ -114,7 +114,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BorderRadius = 16;
+            this.btnLogin.BorderRadius = 21;
             this.btnLogin.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.btnLogin.CheckedState.Parent = this.btnLogin;
             this.btnLogin.CustomBorderColor = System.Drawing.Color.White;
