@@ -14,7 +14,7 @@ namespace CAFE_management
         protected SqlConnection getConnection()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=LAPTOP-JSH98MGC\SQLEXPRESS;Initial Catalog=CafeManagementSystem;Integrated Security=True";
+            con.ConnectionString = @"Data Source=DESKTOP-33OBLD1\SQLEXPRESS;Initial Catalog=cafe-management-system;Integrated Security=True";
             return con;
         }
         public DataSet getdata(String query)
@@ -44,4 +44,3 @@ namespace CAFE_management
         }
     }
 }
- 
