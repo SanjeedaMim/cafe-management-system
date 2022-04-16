@@ -63,5 +63,12 @@ namespace CAFE_management
             uC_PlaceOrder1.Visible = true;
             uC_PlaceOrder1.BringToFront();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+             uC_UpdateItems1.Visible = true;
+            uC_UpdateItems1.BringToFront();
+
+        }
     }
 }

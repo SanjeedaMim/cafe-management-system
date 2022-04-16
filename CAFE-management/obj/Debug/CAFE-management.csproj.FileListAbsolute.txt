@@ -77,3 +77,8 @@ C:\Users\User\Desktop\cafe-management-system\CAFE-management\obj\Debug\CAFE-mana
 C:\Users\User\Desktop\cafe-management-system\CAFE-management\obj\Debug\CAFE-management.csproj.CopyComplete
 C:\Users\User\Desktop\cafe-management-system\CAFE-management\obj\Debug\CAFE-management.exe
 C:\Users\User\Desktop\cafe-management-system\CAFE-management\obj\Debug\CAFE-management.pdb
+C:\Users\User\Desktop\cafe-management-system\CAFE-management\obj\Debug\CAFE_management.AllUserControls.UC_UpdateItems.resources
+C:\Users\User\Desktop\cafe-management-system\CAFE-management\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\User\Desktop\cafe-management-system\CAFE-management\bin\Debug\Guna.UI.dll
+C:\Users\User\Desktop\cafe-management-system\CAFE-management\bin\Debug\Bunifu.Core.dll
+C:\Users\User\Desktop\cafe-management-system\CAFE-management\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml

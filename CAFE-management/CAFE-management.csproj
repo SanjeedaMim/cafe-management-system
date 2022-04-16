@@ -33,12 +33,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\Minar\Bunifu UI\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\Minar\Guna UI\Guna.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\2\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -62,6 +69,12 @@
     </Compile>
     <Compile Include="AllUserControls\UC_PlaceOrder.Designer.cs">
       <DependentUpon>UC_PlaceOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserControls\UC_UpdateItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControls\UC_UpdateItems.Designer.cs">
+      <DependentUpon>UC_UpdateItems.cs</DependentUpon>
     </Compile>
     <Compile Include="AllUserControls\UC_Welcome.cs">
       <SubType>UserControl</SubType>
@@ -90,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControls\UC_PlaceOrder.resx">
       <DependentUpon>UC_PlaceOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControls\UC_UpdateItems.resx">
+      <DependentUpon>UC_UpdateItems.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControls\UC_Welcome.resx">
       <DependentUpon>UC_Welcome.cs</DependentUpon>
