@@ -55,6 +55,8 @@ namespace CAFE_management
         {
             uC_AddItems1.Visible=false;
             uC_PlaceOrder1.Visible=false;
+            uC_UpdateItems1.Visible=false;
+            uC_RemoveItem1.Visible=false;
         }
 
         private void btnPlaceOrder_Click(object sender, EventArgs e)
@@ -69,6 +71,12 @@ namespace CAFE_management
              uC_UpdateItems1.Visible = true;
             uC_UpdateItems1.BringToFront();
 
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            uC_RemoveItem1.Visible = true;
+            uC_RemoveItem1.BringToFront();
         }
     }
 }

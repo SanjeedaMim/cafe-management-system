@@ -25,6 +25,10 @@ namespace CAFE_management.AllUserControls
             
             loadData();
         }
+        private void UC_UpdateItems_VisibleChanged(object sender, EventArgs e)
+        {
+            loadData();
+        }
         public void loadData()
         {
             String query = "select * from items ";
@@ -42,8 +46,8 @@ namespace CAFE_management.AllUserControls
         private void guna2DataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             id = int.Parse(guna2DataGridView3.Rows[e.RowIndex].Cells[0].Value.ToString());
-            String category = guna2DataGridView3.Rows[e.RowIndex].Cells[2].Value.ToString();
-            String name = guna2DataGridView3.Rows[e.RowIndex].Cells[1].Value.ToString();
+            String category = guna2DataGridView3.Rows[e.RowIndex].Cells[1].Value.ToString();
+            String name = guna2DataGridView3.Rows[e.RowIndex].Cells[2].Value.ToString();
             int price =int.Parse(guna2DataGridView3.Rows[e.RowIndex].Cells[3].Value.ToString());
             txtCategory.Text = category;
             txtName.Text = name;
@@ -61,5 +65,7 @@ namespace CAFE_management.AllUserControls
             txtPrice.Clear();
 
         }
+
+       
     }
 }

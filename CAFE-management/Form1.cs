@@ -31,16 +31,13 @@ namespace CAFE_management
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //if (txtUsername.Text == "Minifa" && txtPassword.Text =="031720")
-            //{
-            //    Dashboard ds = new Dashboard();
-            //    ds.Show();
-            //    this.Hide();
-            //}
-
-            Dashboard ds = new Dashboard();
-            ds.Show();
-            this.Hide();
+            if (txtUsername.Text == "Minifa" && txtPassword.Text == "031720")
+            {
+                Dashboard ds = new Dashboard();
+                ds.Show();
+                this.Hide();
+            }
+         
         }
     }
 }

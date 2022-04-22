@@ -44,10 +44,12 @@
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse7 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_UpdateItems1 = new CAFE_management.AllUserControls.UC_UpdateItems();
             this.uC_PlaceOrder1 = new CAFE_management.AllUserControls.UC_PlaceOrder();
             this.uC_AddItems1 = new CAFE_management.AllUserControls.UC_AddItems();
             this.uC_Welcome1 = new CAFE_management.AllUserControls.UC_Welcome();
-            this.uC_UpdateItems1 = new CAFE_management.AllUserControls.UC_UpdateItems();
+            this.uC_RemoveItem1 = new CAFE_management.AllUserControls.UC_RemoveItem();
             this.sideBar.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -117,6 +119,7 @@
             this.btnRemove.Size = new System.Drawing.Size(210, 48);
             this.btnRemove.TabIndex = 3;
             this.btnRemove.Text = "Remove Items";
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnUpdate
             // 
@@ -181,6 +184,7 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
+            this.guna2Panel2.Controls.Add(this.uC_RemoveItem1);
             this.guna2Panel2.Controls.Add(this.uC_UpdateItems1);
             this.guna2Panel2.Controls.Add(this.uC_PlaceOrder1);
             this.guna2Panel2.Controls.Add(this.uC_AddItems1);
@@ -226,6 +230,19 @@
             this.guna2Elipse6.BorderRadius = 30;
             this.guna2Elipse6.TargetControl = this.guna2Panel2;
             // 
+            // guna2Elipse7
+            // 
+            this.guna2Elipse7.BorderRadius = 30;
+            this.guna2Elipse7.TargetControl = this.guna2Panel2;
+            // 
+            // uC_UpdateItems1
+            // 
+            this.uC_UpdateItems1.BackColor = System.Drawing.Color.White;
+            this.uC_UpdateItems1.Location = new System.Drawing.Point(3, 1);
+            this.uC_UpdateItems1.Name = "uC_UpdateItems1";
+            this.uC_UpdateItems1.Size = new System.Drawing.Size(727, 553);
+            this.uC_UpdateItems1.TabIndex = 3;
+            // 
             // uC_PlaceOrder1
             // 
             this.uC_PlaceOrder1.BackColor = System.Drawing.Color.White;
@@ -250,13 +267,13 @@
             this.uC_Welcome1.Size = new System.Drawing.Size(727, 553);
             this.uC_Welcome1.TabIndex = 0;
             // 
-            // uC_UpdateItems1
+            // uC_RemoveItem1
             // 
-            this.uC_UpdateItems1.BackColor = System.Drawing.Color.White;
-            this.uC_UpdateItems1.Location = new System.Drawing.Point(3, 1);
-            this.uC_UpdateItems1.Name = "uC_UpdateItems1";
-            this.uC_UpdateItems1.Size = new System.Drawing.Size(727, 553);
-            this.uC_UpdateItems1.TabIndex = 3;
+            this.uC_RemoveItem1.BackColor = System.Drawing.Color.White;
+            this.uC_RemoveItem1.Location = new System.Drawing.Point(0, 3);
+            this.uC_RemoveItem1.Name = "uC_RemoveItem1";
+            this.uC_RemoveItem1.Size = new System.Drawing.Size(727, 553);
+            this.uC_RemoveItem1.TabIndex = 4;
             // 
             // Dashboard
             // 
@@ -299,5 +316,7 @@
         private AllUserControls.UC_PlaceOrder uC_PlaceOrder1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
         private AllUserControls.UC_UpdateItems uC_UpdateItems1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse7;
+        private AllUserControls.UC_RemoveItem uC_RemoveItem1;
     }
 }
