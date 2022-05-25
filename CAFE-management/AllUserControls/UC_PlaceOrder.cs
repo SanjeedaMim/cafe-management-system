@@ -60,7 +60,7 @@ namespace CAFE_management.AllUserControls
 
             }
             catch { }
-
+            txtQuantityUpDown.Value = 0;
         }
 
         private void txtQuantityUpDown_ValueChanged(object sender, EventArgs e)
@@ -97,21 +97,29 @@ namespace CAFE_management.AllUserControls
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
-            DGVPrinter printer = new DGVPrinter();
-            printer.Title = "Customer Bill";
-            printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date);
-            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
-            printer.PageNumbers = true;
-            printer.PageNumberInHeader = false;
-            printer.PorportionalColumns = true;
-            printer.HeaderCellAlignment = StringAlignment.Near;
-            printer.Footer = "Total Payable Amount : " + labelTotalAmount.Text;
-            printer.FooterSpacing = 15;
-            printer.PrintDataGridView(guna2DataGridView1);
+            //DGVPrinter printer = new DGVPrinter();
+            //printer.Title = "Customer Bill";
+            //printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date);
+            //printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            //printer.PageNumbers = true;
+            //printer.PageNumberInHeader = false;
+            //printer.PorportionalColumns = true;
+            //printer.HeaderCellAlignment = StringAlignment.Near;
+            //printer.Footer = "Total Payable Amount : " + labelTotalAmount.Text;
+            //printer.FooterSpacing = 15;
+            //printer.PrintDataGridView(guna2DataGridView1);
 
-            total = 0;
-            guna2DataGridView1.Rows.Clear();
-            labelTotalAmount.Text = "TK. " + total;
+            //total = 0;
+            //guna2DataGridView1.Rows.Clear();
+            //labelTotalAmount.Text = "TK. " + total;
+
+
+
+        }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnAddToCart_Click(object sender, EventArgs e)
@@ -124,15 +132,13 @@ namespace CAFE_management.AllUserControls
                 guna2DataGridView1.Rows[n].Cells[2].Value = txtQuantityUpDown.Value;
                 guna2DataGridView1.Rows[n].Cells[3].Value = txtTotal.Text;
 
-                total += total + int.Parse(txtTotal.Text);
+                total = total + int.Parse(txtTotal.Text);
                 labelTotalAmount.Text = "TK. " + total;
             }
             else
             {
                 MessageBox.Show("Minimum Quantity need to be 1","Information" ,MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
-          
         }
-
     }
 }
